@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+	<name>Members</name>
+	<version>1.0.0</version>
+	<requirements>
+		<minimum_version>3.9.0</minimum_version>
+        <module>
+            <name>Members</name>
+            <minimum_version>1.0.0</minimum_version>
+        </module>
+	</requirements>
+	<description>
+		<![CDATA[
+			Members
+		]]>
+	</description>
+	<authors>
+		<author>
+			<name><![CDATA[Vytenis Ščiukas]]></name>
+			<url><![CDATA[http://www.vytsci.lt]]></url>
+		</author>
+	</authors>
+	<events>
+		<event application="backend" name="after_add"><![CDATA[Triggered after a member was added.]]></event>
+        <event application="backend" name="after_edit"><![CDATA[Triggered after a member was edited.]]></event>
+        <event application="backend" name="after_delete"><![CDATA[Triggered after a member was deleted.]]></event>
+        <event application="backend" name="after_add_address"><![CDATA[Triggered after an address was added.]]></event>
+        <event application="backend" name="after_edit_address"><![CDATA[Triggered after an address was edited.]]></event>
+        <event application="backend" name="after_set_address_primary"><![CDATA[Triggered after a primary address have been set.]]></event>
+        <event application="backend" name="after_saved_settings"><![CDATA[Triggered when the settings are saved.]]></event>
+        <event application="frontend" name="after_set_address_primary"><![CDATA[Triggered after a primary address have been set.]]></event>
+        <event application="frontend" name="after_completed_registration"><![CDATA[Triggered after a registration have been completed.]]></event>
+        <event application="frontend" name="after_saved_account"><![CDATA[Triggered after a account have been saved.]]></event>
+	</events>
+</module>
